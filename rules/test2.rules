@@ -1,0 +1,4 @@
+## EICAR-STANDARD-ANTIVIRUS-TEST-FILE
+alert tcp any any -> any any (msg:"EICAR partial match"; \
+content:"EICAR-STANDARD-ANTIVIRUS-TEST-FILE"; http_server_body; \
+reference:url,en.wikipedia.org/wiki/EICAR_test_file; sid:91000002; rev:1;)
